@@ -1,0 +1,27 @@
+#!/bin/bash
+# Check if the file exists
+# This script gives information about the school file
+# Must use if and else
+
+file="school"  # Name of the file to check
+
+
+if [ -e "$file" ]; then
+    echo "school file exists"
+
+   
+    if [ -s "$file" ]; then
+        echo "school file is not empty"
+
+       
+        if [ -f "$file" ]; then
+            echo "school is a regular file"
+        else
+            :
+        fi
+    else
+        echo "school file is empty"
+    fi
+else
+    echo "school file does not exist"
+fi
