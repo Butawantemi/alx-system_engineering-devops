@@ -1,7 +1,6 @@
 #!/bin/bash
-
 # Use awk to extract and format the IP and HTTP status code
 # Sort and count the occurrences
 # Display the results in the specified format, ordered by occurrence count
-awk '{print $1, $9}' apache-access.log | sort | uniq -c | sort -nr | awk '{print $1, $2, $3}'
 
+awk '{print $1, $9}' apache-access.log | sort | uniq -c | sort -nr | awk '{print $1, $2, $3}'
