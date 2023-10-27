@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # This script displays numbers 1 to 20
 # Display 4 and then "bad luck from China" for the 4th loop iteration
 # Displays 9 and then "bad luck from Japan" for the 9th loop iteration
