@@ -1,3 +1,3 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Use ps to display a list of all processes, including those without a TTY, in a tree-like format
 ps auxf
