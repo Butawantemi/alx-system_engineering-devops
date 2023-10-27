@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # This script displays "Best School" 10 times using a while loop
 # On the 9th iteration it displays "Hi"
 # An if statement must be used
