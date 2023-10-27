@@ -1,9 +1,13 @@
 #!/usr/bin/env bash
+# Main script logic
+# Function to restart the script
+# Function to start the script
+# Function to stop the script
 
 SCRIPT_NAME="manage_my_process"
 PID_FILE="/var/run/my_process.pid"
 
-# Function to start the script
+
 start() {
   if [ -f "$PID_FILE" ]; then
     echo "$SCRIPT_NAME is already running (PID: $(cat $PID_FILE))"
@@ -14,7 +18,6 @@ start() {
   fi
 }
 
-# Function to stop the script
 stop() {
   if [ -f "$PID_FILE" ]; then
     pid=$(cat $PID_FILE)
@@ -26,14 +29,13 @@ stop() {
   fi
 }
 
-# Function to restart the script
 restart() {
   stop
   start
   echo "$SCRIPT_NAME restarted"
 }
 
-# Main script logic
+
 case "$1" in
   start)
     start
