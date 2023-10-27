@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # This script uses a while loop to print "Best School" 10 times
 
 count=0
@@ -8,5 +8,3 @@ do
     echo "Best School"
     ((count++))
 done
-
-
