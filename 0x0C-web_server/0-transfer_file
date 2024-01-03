@@ -1,12 +1,8 @@
 #!/usr/bin/env bash
 # transfers a file from our client to a server
-# path_to_file="$1"
-# ip="$2"
-# username="$3"
-# path_to_ssh_key="$4"
+# path_to_file="$1", ip="$2", username="$3" and path_to_ssh_key="$4"
 # scp must transfer the file to the user home directory ~/
 # Strict host key checking must be disabled when using scp
-
 # Check if less than 3 parameters are provided
 
 if [ $# -lt 4 ]
